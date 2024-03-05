@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="thuni.ng" />
+    <meta property="og:title" content="Vad är klockan?" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Vad är klockan?</title>
+
+    <script type="text/javascript" src="./time.js" defer></script>
+    <script type="text/javascript" src="./date.js" defer></script>
+    <style>
+      @font-face {
+          font-family: "Anonymous";
+          src: url("AnonymousPro-Regular.woff2");
+      }
+      body {
+          margin: 0;
+          padding: 0;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 3.4vw;
+          font-family: Anonymous;
+          color: white;
+          background-color: #050505;
+      }
+      #time {
+          font-size: 120%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+  </body>
+</html>
