@@ -82,6 +82,10 @@
             hourIndex -= 24
         }
 
+        if(hourIndex >= hourStrings.length) {
+            hourIndex = 0;
+        }
+
         const hourString = hourStrings[hourIndex];
         const minuteString = minuteStrings[minuteIndex];
         const timeOfDayString = timeOfDay(hours);
